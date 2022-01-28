@@ -21,8 +21,7 @@ export const createPost = async (req, res) => {
 
   try {
     await newPost.save()
-    // saving post...
-    console.log("saving posts...")
+
     res.status(201).json(newPost)
   } catch (error) {
     res.status(409).json({ message: error.message })
