@@ -7,6 +7,7 @@ export const getPosts = async (req, res) => {
     console.log("GET BUG FIX A")
     res.status(200).json(postMessages)
     console.log("additional logging A")
+    console.log("successful get Posts A")
   } catch (error) {
     res.status(404).json({ message: error.message })
   }
@@ -23,6 +24,7 @@ export const createPost = async (req, res) => {
     console.log("CREATE BUG FIX A")
     res.status(201).json(newPost)
     console.log("additional logging A")
+    console.log("successful create post A")
   } catch (error) {
     res.status(409).json({ message: error.message })
   }
