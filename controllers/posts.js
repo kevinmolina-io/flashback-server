@@ -1,6 +1,5 @@
 import PostMessage from '../models/postMessage.js'
 
-// get posts call
 export const getPosts = async (req, res) => {
   try {
     // query post
@@ -12,7 +11,6 @@ export const getPosts = async (req, res) => {
 
 }
 
-// create posts call
 export const createPost = async (req, res) => {
   const post = req.body
 
@@ -25,8 +23,4 @@ export const createPost = async (req, res) => {
   } catch (error) {
     res.status(409).json({ message: error.message })
   }
-}
-
-export const deletePost = async (req, res) => {
-  console.log("NEW FIX B")
 }
