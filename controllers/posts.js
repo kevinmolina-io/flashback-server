@@ -37,8 +37,7 @@ export const deletePost = async (req, res) => {
 }
 
 export const editPost = async (req, res) => {
-  const { postId } = req.param
+  // grab the id from the params
 
-  const post = await PostMessage.findById(postId)
-  console.log(post);
+  // based on the id, fetch the post
 }
