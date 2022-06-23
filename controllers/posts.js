@@ -40,4 +40,5 @@ export const editPost = async (req, res) => {
   const { postId } = req.param
 
   const post = await PostMessage.findById(postId)
+  console.log(post);
 }
